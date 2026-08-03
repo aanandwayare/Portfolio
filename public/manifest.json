@@ -1,0 +1,16 @@
+{
+  "name": "Anand Chandrakant Wayare - Portfolio",
+  "short_name": "Anand Wayare",
+  "description": "Full Stack Developer & AI Engineer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090A0F",
+  "theme_color": "#090A0F",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
