@@ -29,7 +29,7 @@ export default function AboutSection() {
     },
     {
       command: 'contact',
-      output: `Email: anandwayare45@gmail.com | Location: Pune, Maharashtra, India`,
+      output: `Email: aanandwayare61@gmail.com | Location: Pune, Maharashtra, India`,
     },
   ]);
   const [inputCommand, setInputCommand] = useState('');
@@ -47,23 +47,23 @@ export default function AboutSection() {
           'Available commands: whoami, skills, education, experience, projects, contact, socials, clear, date, resume, cat vision.txt, cat architecture.md';
         break;
       case 'whoami':
-        output = `${personalInfo.name} - Full Stack Developer & AI Engineer with distinction in Computer Engineering.`;
+        output = `${personalInfo.name} - Java Full Stack Developer & AI Engineer with distinction in Computer Engineering.`;
         break;
       case 'skills':
         output =
-          'Next.js 14, React 18, TypeScript, Node.js, Python, PyTorch, LangChain, Tailwind CSS, PostgreSQL, Docker, Git.';
+          'Java, Spring Boot, Spring MVC, Hibernate, JDBC, Servlets, JSP, REST APIs, MySQL, Next.js, React, TypeScript, Python, OpenAI API, LangChain.';
         break;
       case 'education':
         output =
-          '1. BE in Computer Engineering @ Sinhagad Institute of Technology, Lonavala (2023 - Present)\n2. Diploma in Computer Engineering @ MSBTE (First Class with Distinction, 2020 - 2023)';
+          '1. BE in Computer Engineering @ Sinhagad Institute of Technology, Lonavala (2025 - Present)\n2. Diploma in Computer Engineering @ MSBTE (First Class with Distinction, 2022 - 2025)';
         break;
       case 'experience':
         output =
-          'Academic Excellence, Technical Team Lead & Autonomous AI Pipeline Developer at Sinhagad Institute of Technology.';
+          'Android Developer Intern @ Mountreach Solution Pvt. Ltd. (June 2024 - July 2024) | Artificial Intelligence Intern @ CodeNova (March 2026 - April 2026).';
         break;
       case 'projects':
         output =
-          '1. Enterprise Multi-Agent AI Workflow Hub\n2. Next-Gen Realtime E-Commerce Engine\n3. Algorithmic Trading Analytics Dashboard\n4. Interactive ATS Resume Engine';
+          '1. NeuroFlow AI (Autonomous Multi-Agent Workflow Engine)\n2. DevNexus Cloud (Collaborative Coding Environment)\n3. VisionPulse ML (Computer Vision Diagnostic Tool)\n4. EchoMarket (Headless Java E-Commerce Store)';
         break;
       case 'contact':
         output = `Email: ${personalInfo.email}\nPhone: ${personalInfo.phone}\nLocation: ${personalInfo.location}`;
@@ -85,18 +85,18 @@ export default function AboutSection() {
         break;
       case 'cat vision.txt':
         output =
-          'Vision: To pioneer resilient, autonomous AI applications and high-throughput web systems that scale globally with zero downtime.';
+          'Vision: To pioneer resilient, autonomous AI applications and high-throughput enterprise systems that scale globally with zero downtime.';
         break;
       case 'cat architecture.md':
         output =
-          'Architecture Principles:\n• Strict type safety with TypeScript\n• Server-side rendering with Next.js 14 App Router\n• High performance 60fps micro-interactions\n• Clean modular architecture';
+          'Architecture Principles:\n• Decoupled enterprise layers (Controller -> Service -> Repository)\n• Strict type safety with TypeScript & Java compilation\n• High performance micro-interactions\n• Clean modular architecture';
         break;
       case 'cat skills.json':
         output = JSON.stringify(
           {
             frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-            backend: ['Node.js', 'Python', 'FastAPI', 'PostgreSQL'],
-            ai: ['LangChain', 'OpenAI', 'PyTorch', 'Vector DBs'],
+            backend: ['Java', 'Spring Boot', 'Hibernate', 'MySQL'],
+            ai: ['LangChain', 'OpenAI API', 'Python', 'spaCy'],
           },
           null,
           2

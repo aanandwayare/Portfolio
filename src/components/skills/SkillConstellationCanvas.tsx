@@ -132,7 +132,10 @@ export default function SkillConstellationCanvas({
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      className={`relative w-full h-[580px] sm:h-[640px] lg:h-[680px] rounded-3xl bg-gradient-to-b from-surface via-[#141618] to-surface dark:from-[#141618] dark:via-[#0E1012] dark:to-[#141618] border border-border/80 shadow-2xl overflow-hidden select-none ${
+      className={`relative w-full h-[580px] sm:h-[640px] lg:h-[680px] rounded-3xl
+        bg-gradient-to-b from-[#F8F7F5] via-[#EFEDE8] to-[#F8F7F5]
+        dark:from-[#141618] dark:via-[#0E1012] dark:to-[#141618]
+        border border-border/80 shadow-2xl overflow-hidden select-none ${
         isDragging ? 'cursor-grabbing' : 'cursor-grab'
       }`}
     >
@@ -213,8 +216,8 @@ export default function SkillConstellationCanvas({
 
             {/* Edge Gradients */}
             <linearGradient id="edge-active-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#C27A45" />
-              <stop offset="50%" stopColor="#D89B65" />
+              <stop offset="0%" stopColor="#FF6B00" />
+              <stop offset="50%" stopColor="#FF8C35" />
               <stop offset="100%" stopColor="#38BDF8" />
             </linearGradient>
           </defs>
@@ -233,9 +236,9 @@ export default function SkillConstellationCanvas({
               const isConnectedToMatch =
                 matchingSkillIds.has(src.id) && matchingSkillIds.has(tgt.id);
 
-              let strokeColor = 'rgba(255, 255, 255, 0.12)';
+              let strokeColor = 'rgba(100, 100, 120, 0.15)';
               let strokeWidth = 1.2;
-              let opacity = 0.35;
+              let opacity = 0.5;
               let strokeDasharray = 'none';
 
               if (activeFocusId) {
@@ -245,15 +248,15 @@ export default function SkillConstellationCanvas({
                   opacity = 1;
                   strokeDasharray = '6,4';
                 } else {
-                  opacity = 0.08;
+                  opacity = 0.06;
                 }
               } else if (searchQuery || activeCategory !== 'All') {
                 if (isConnectedToMatch) {
-                  strokeColor = '#C27A45';
+                  strokeColor = '#FF6B00';
                   strokeWidth = 1.8;
-                  opacity = 0.8;
+                  opacity = 0.75;
                 } else {
-                  opacity = 0.08;
+                  opacity = 0.06;
                 }
               }
 
@@ -272,7 +275,7 @@ export default function SkillConstellationCanvas({
                   />
                   {/* Energy Particle on Active Connection */}
                   {isConnectedToFocus && (
-                    <circle r="2.5" fill="#F6F5F3">
+                    <circle r="2.5" fill="#FF6B00">
                       <animateMotion
                         dur="2.2s"
                         repeatCount="indefinite"
@@ -336,18 +339,17 @@ export default function SkillConstellationCanvas({
                     className="transition-all duration-300"
                   />
 
-                  {/* Main Glass Node Circle */}
+                  {/* Main Glass Node Circle — theme-aware fill */}
                   <circle
                     r={radius}
-                    fill="#1A1D20"
+                    className="fill-surface dark:fill-[#1A1D20] transition-all duration-300"
                     stroke={
                       isFocused || isSelected
-                        ? skill.color || '#C27A45'
-                        : 'rgba(255, 255, 255, 0.15)'
+                        ? skill.color || '#FF6B00'
+                        : 'rgba(150, 150, 160, 0.25)'
                     }
                     strokeWidth={isFocused || isSelected ? 2.5 : 1.2}
                     filter={isFocused || isSelected ? 'url(#glow-node)' : undefined}
-                    className="transition-all duration-300 group-hover:stroke-primary"
                   />
 
                   {/* Center Tech Icon Container */}
@@ -372,15 +374,20 @@ export default function SkillConstellationCanvas({
                     </div>
                   </foreignObject>
 
-                  {/* Label Text below node */}
+                  {/* Label Text below node — theme-aware fill */}
                   <text
                     y={radius + 14}
                     textAnchor="middle"
-                    className={`text-[11px] sm:text-[12px] font-sans font-semibold tracking-tight fill-current transition-all duration-200 pointer-events-none select-none ${
+                    fontSize="11"
+                    fontFamily="system-ui, sans-serif"
+                    fontWeight={isFocused || isSelected ? '700' : '500'}
+                    fill={
                       isFocused || isSelected
-                        ? 'fill-primary font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]'
-                        : 'fill-foreground/90'
-                    }`}
+                        ? '#FF6B00'
+                        : 'currentColor'
+                    }
+                    className="pointer-events-none select-none transition-all duration-200"
+                    style={{ opacity: 0.85 }}
                   >
                     {skill.name}
                   </text>
@@ -390,8 +397,8 @@ export default function SkillConstellationCanvas({
                     cx={radius * 0.7}
                     cy={-radius * 0.7}
                     r={3}
-                    fill={skill.color || '#C27A45'}
-                    stroke="#1A1D20"
+                    fill={skill.color || '#FF6B00'}
+                    stroke="none"
                     strokeWidth="1"
                     className="pointer-events-none"
                   />

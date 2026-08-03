@@ -9,36 +9,40 @@
   --font-display: 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Default Dark (Obsidian Luxury) */
-  --background: #0B0B0F;
-  --foreground: #F3F4F6;
-  --card: rgba(16, 16, 23, 0.7);
-  --card-foreground: #F9FAFB;
-  --popover: #101017;
-  --popover-foreground: #F9FAFB;
+  /* Default Dark */
+  --background: #111315;
+  --foreground: #F6F5F3;
+  --surface: #1A1D20;
+  --elevated: #24282C;
+  --card: rgba(26, 29, 32, 0.7);
+  --card-foreground: #F6F5F3;
+  --popover: #1A1D20;
+  --popover-foreground: #F6F5F3;
   --border: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(59, 130, 246, 0.4);
+  --border-highlight: rgba(255, 107, 0, 0.4);
   --input: rgba(255, 255, 255, 0.06);
-  --ring: #3B82F6;
-  --glass-bg: rgba(16, 16, 23, 0.65);
+  --ring: #FF6B00;
+  --glass-bg: rgba(26, 29, 32, 0.75);
   --glass-border: rgba(255, 255, 255, 0.1);
   --grid-color: rgba(255, 255, 255, 0.03);
 }
 
 .light {
-  --background: #FAFAFC;
-  --foreground: #0F172A;
-  --card: rgba(255, 255, 255, 0.85);
-  --card-foreground: #0F172A;
+  --background: #F8F7F5;
+  --foreground: #1D1D1F;
+  --surface: #FFFFFF;
+  --elevated: #EFEDE8;
+  --card: rgba(255, 255, 255, 0.95);
+  --card-foreground: #1D1D1F;
   --popover: #FFFFFF;
-  --popover-foreground: #0F172A;
+  --popover-foreground: #1D1D1F;
   --border: rgba(0, 0, 0, 0.08);
-  --border-highlight: rgba(37, 99, 235, 0.35);
+  --border-highlight: rgba(255, 107, 0, 0.35);
   --input: rgba(0, 0, 0, 0.04);
-  --ring: #2563EB;
-  --glass-bg: rgba(255, 255, 255, 0.8);
+  --ring: #FF6B00;
+  --glass-bg: rgba(255, 255, 255, 0.85);
   --glass-border: rgba(0, 0, 0, 0.08);
-  --grid-color: rgba(0, 0, 0, 0.03);
+  --grid-color: rgba(0, 0, 0, 0.04);
 }
 
 * {

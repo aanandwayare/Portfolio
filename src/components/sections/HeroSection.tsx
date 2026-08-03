@@ -20,11 +20,11 @@ interface HeroSectionProps {
 }
 
 const roles = [
-  'Full Stack Developer',
-  'AI / ML Systems Engineer',
-  'Next.js & React Specialist',
+  'Java Full Stack Developer',
+  'AI Systems Engineer',
+  'Spring Boot Specialist',
+  'React & Next.js Developer',
   'Autonomous Agent Architect',
-  'Scalable Cloud Engineer',
 ];
 
 export default function HeroSection({ onOpenAI }: HeroSectionProps) {

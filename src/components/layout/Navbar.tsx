@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sparkles,
-  Command,
   Menu,
   X,
   FileText,
@@ -14,6 +13,7 @@ import {
   GraduationCap,
   Mail,
 } from 'lucide-react';
+
 import { personalInfo } from '@/data/portfolioData';
 import ThemeToggle from './ThemeToggle';
 import Button from '../ui/Button';
@@ -90,10 +90,10 @@ export default function Navbar({ onOpenCommand, onOpenAI }: NavbarProps) {
             </div>
             <div className="hidden sm:flex flex-col">
               <span className="font-heading font-bold text-sm text-foreground tracking-tight group-hover:text-primary transition-colors">
-                {personalInfo.name}
+                Anand Wayare
               </span>
               <span className="text-[10px] font-mono text-muted-foreground tracking-wider uppercase">
-                Executive Portfolio
+                Portfolio
               </span>
             </div>
           </button>
@@ -127,18 +127,6 @@ export default function Navbar({ onOpenCommand, onOpenAI }: NavbarProps) {
 
           {/* Right Action Controls */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Quick Command Trigger */}
-            <button
-              onClick={onOpenCommand}
-              className="hidden sm:flex items-center gap-2 px-3 py-1.5 text-xs font-mono text-muted-foreground border border-border rounded-xl bg-surface/60 hover:bg-elevated hover:text-foreground transition-all"
-              aria-label="Open Command Palette"
-            >
-              <Command className="w-3.5 h-3.5" />
-              <span>Search</span>
-              <kbd className="text-[10px] bg-elevated px-1.5 py-0.5 rounded border border-border text-muted-foreground">
-                ⌘K
-              </kbd>
-            </button>
 
             {/* AI Assistant Quick Trigger */}
             <button

@@ -59,18 +59,18 @@ export interface FAQItem {
 export const personalInfo = {
   name: 'Anand Chandrakant Wayare',
   shortName: 'Anand Wayare',
-  role: 'Full Stack Developer & AI Engineer',
-  tagline: 'Building Intelligent Digital Experiences with AI and Modern Web Technologies.',
+  role: 'Java Full Stack Developer & AI Engineer',
+  tagline: 'Building Intelligent Enterprise Applications Powered by Java, Spring Boot, React, and Artificial Intelligence.',
   location: 'Pune, Maharashtra, India',
   timezone: 'IST (UTC+05:30)',
   email: 'aanandwayare61@gmail.com',
   phone: '+91 7276011718',
   status: '🟢 Open to Full-Time & High-Impact Roles',
   bioSummary:
-    'Passionate Computer Engineering student specializing in Full Stack Development and Artificial Intelligence. I enjoy creating scalable applications, solving real-world problems through technology, and continuously exploring modern software engineering practices. My goal is to build impactful products that combine clean design, intelligent automation, and exceptional user experience.',
+    'I am a Computer Engineering student at Sinhagad Institute of Technology, Lonavala, with a strong foundation built through my Diploma in Computer Engineering. My expertise combines Java Full Stack Development (Java, Spring Boot, Hibernate, JDBC, Servlets, JSP, React, Next.js, TypeScript, HTML, CSS, Tailwind CSS, MySQL) with Applied Artificial Intelligence (Python, OpenAI APIs, LangChain, Vector Databases, Machine Learning, Scikit-Learn, spaCy). I enjoy building scalable enterprise applications enhanced with intelligent AI capabilities while focusing on clean architecture, performance, and user experience.',
   aboutDetailed: [
     'I am a Computer Engineering student at Sinhagad Institute of Technology, Lonavala, with a solid foundational background in software engineering through my prior Diploma in Computer Engineering.',
-    'My core expertise bridges modern Full Stack Architecture (Next.js, React, TypeScript, Node.js, Express, Tailwind CSS) with modern Applied Artificial Intelligence (LangChain, OpenAI APIs, Vector Databases, Python, PyTorch, Scikit-Learn, spaCy).',
+    'My core expertise bridges modern Java Full Stack Development (Java, Spring Boot, Hibernate, JDBC, Servlets, JSP, React, Next.js, TypeScript, Tailwind CSS) with modern Applied Artificial Intelligence (LangChain, OpenAI APIs, Vector Databases, Python, Scikit-Learn, spaCy).',
     'I believe that the next generation of software lies in combining frictionless, high-aesthetic interfaces with autonomous, intelligent backends.',
   ],
   socials: {
@@ -86,7 +86,7 @@ export const personalInfo = {
     { label: 'Uptime & Reliability', value: '99.9%' },
   ],
   quickHighlights: [
-    'Specialized in Next.js 14 App Router & Modern React Ecosystem',
+    'Specialized in Java Full Stack Development & Spring Boot',
     'Architecting Autonomous AI Multi-Agent & LLM Pipelines (LangChain, RAG)',
     'Strong Computer Science Fundamentals: Data Structures, Algorithms & System Design',
     'Experience spanning BE Computer Engineering & Diploma in Computer Engineering',
@@ -96,17 +96,26 @@ export const personalInfo = {
 export const skillsData: Skill[] = [
   // Programming Languages
   {
+    name: 'Java',
+    level: 94,
+    category: 'Programming Languages',
+    experienceYears: '3+ yrs',
+    iconName: 'Coffee',
+    featuredProject: 'DevNexus Cloud',
+    description: 'Object-oriented programming, Collections framework, multithreading, and streams API.',
+  },
+  {
     name: 'TypeScript',
-    level: 92,
+    level: 90,
     category: 'Programming Languages',
     experienceYears: '2+ yrs',
     iconName: 'Code2',
-    featuredProject: 'DevNexus Cloud',
+    featuredProject: 'Portfolio',
     description: 'Strict type safety, generics, utility types, and modern ESNext features.',
   },
   {
     name: 'JavaScript (ES6+)',
-    level: 95,
+    level: 93,
     category: 'Programming Languages',
     experienceYears: '3+ yrs',
     iconName: 'FileCode2',
@@ -120,7 +129,7 @@ export const skillsData: Skill[] = [
     experienceYears: '3+ yrs',
     iconName: 'Terminal',
     featuredProject: 'VisionPulse ML',
-    description: 'FastAPI, Flask, Data Science, PyTorch, automation scripts, and AI agents.',
+    description: 'Data Science, PyTorch, automation scripts, and AI agent frameworks.',
   },
   {
     name: 'C++',
@@ -132,24 +141,8 @@ export const skillsData: Skill[] = [
     description: 'OOP, STL, memory management, algorithmic problem solving & DSA.',
   },
   {
-    name: 'C',
-    level: 85,
-    category: 'Programming Languages',
-    experienceYears: '3+ yrs',
-    iconName: 'Binary',
-    description: 'Pointers, low-level memory allocation, system programming fundamentals.',
-  },
-  {
-    name: 'Java',
-    level: 82,
-    category: 'Programming Languages',
-    experienceYears: '2+ yrs',
-    iconName: 'Coffee',
-    description: 'Object-oriented programming, Collections framework, Multi-threading.',
-  },
-  {
     name: 'SQL',
-    level: 88,
+    level: 92,
     category: 'Programming Languages',
     experienceYears: '3+ yrs',
     iconName: 'Database',
@@ -160,7 +153,7 @@ export const skillsData: Skill[] = [
   // Frontend
   {
     name: 'React.js',
-    level: 95,
+    level: 94,
     category: 'Frontend',
     experienceYears: '3+ yrs',
     iconName: 'Atom',
@@ -169,7 +162,7 @@ export const skillsData: Skill[] = [
   },
   {
     name: 'Next.js (App Router)',
-    level: 94,
+    level: 92,
     category: 'Frontend',
     experienceYears: '2+ yrs',
     iconName: 'Layers',
@@ -178,16 +171,15 @@ export const skillsData: Skill[] = [
   },
   {
     name: 'Tailwind CSS',
-    level: 96,
+    level: 95,
     category: 'Frontend',
     experienceYears: '3+ yrs',
     iconName: 'Palette',
-    featuredProject: 'Portfolio 2026',
     description: 'Responsive design, custom design tokens, animations, dark mode palettes.',
   },
   {
     name: 'HTML5 & Modern CSS3',
-    level: 98,
+    level: 96,
     category: 'Frontend',
     experienceYears: '4+ yrs',
     iconName: 'Layout',
@@ -195,7 +187,7 @@ export const skillsData: Skill[] = [
   },
   {
     name: 'Framer Motion',
-    level: 90,
+    level: 88,
     category: 'Frontend',
     experienceYears: '2+ yrs',
     iconName: 'Sparkles',
@@ -204,34 +196,33 @@ export const skillsData: Skill[] = [
 
   // Backend & APIs
   {
-    name: 'Node.js',
-    level: 90,
-    category: 'Backend & APIs',
-    experienceYears: '3+ yrs',
-    iconName: 'Server',
-    featuredProject: 'DevNexus Cloud',
-    description: 'Event-driven I/O, microservices, stream processing, middleware pipelines.',
-  },
-  {
-    name: 'Express.js',
+    name: 'Spring Boot',
     level: 92,
     category: 'Backend & APIs',
-    experienceYears: '3+ yrs',
-    iconName: 'Network',
-    description: 'RESTful API routing, JWT auth, rate limiting, error handling architecture.',
+    experienceYears: '2+ yrs',
+    iconName: 'Server',
+    featuredProject: 'DevNexus Cloud',
+    description: 'Dependency injection, Spring MVC, Security, Spring Data JPA, microservices.',
   },
   {
-    name: 'Flask / FastAPI',
-    level: 88,
+    name: 'Hibernate',
+    level: 89,
     category: 'Backend & APIs',
     experienceYears: '2+ yrs',
+    iconName: 'Network',
+    description: 'Object-Relational Mapping (ORM), session management, caching, HQL.',
+  },
+  {
+    name: 'JDBC / Servlets / JSP',
+    level: 88,
+    category: 'Backend & APIs',
+    experienceYears: '3+ yrs',
     iconName: 'Zap',
-    featuredProject: 'NeuroFlow AI',
-    description: 'Lightweight AI model serving, async endpoints, Pydantic validation.',
+    description: 'Dynamic web page generation, request handling, direct database connectivity.',
   },
   {
     name: 'RESTful API Design',
-    level: 94,
+    level: 93,
     category: 'Backend & APIs',
     experienceYears: '3+ yrs',
     iconName: 'Share2',
@@ -249,8 +240,8 @@ export const skillsData: Skill[] = [
     description: 'Prompt engineering, Function calling, Structured outputs, Embeddings.',
   },
   {
-    name: 'LangChain & RAG',
-    level: 89,
+    name: 'LangChain',
+    level: 88,
     category: 'AI & Machine Learning',
     experienceYears: '2+ yrs',
     iconName: 'Cpu',
@@ -258,17 +249,8 @@ export const skillsData: Skill[] = [
     description: 'Multi-agent orchestration, vector memory retrieval, document splitters.',
   },
   {
-    name: 'PyTorch / TensorFlow',
-    level: 82,
-    category: 'AI & Machine Learning',
-    experienceYears: '2+ yrs',
-    iconName: 'BrainCircuit',
-    featuredProject: 'VisionPulse ML',
-    description: 'Neural networks, CNNs, model fine-tuning, loss evaluation, inference.',
-  },
-  {
     name: 'Scikit-Learn',
-    level: 86,
+    level: 85,
     category: 'AI & Machine Learning',
     experienceYears: '2+ yrs',
     iconName: 'BarChart3',
@@ -276,7 +258,7 @@ export const skillsData: Skill[] = [
   },
   {
     name: 'spaCy / NLP',
-    level: 84,
+    level: 83,
     category: 'AI & Machine Learning',
     experienceYears: '2+ yrs',
     iconName: 'FileText',
@@ -285,22 +267,13 @@ export const skillsData: Skill[] = [
 
   // Databases & Cloud
   {
-    name: 'MongoDB',
-    level: 90,
+    name: 'MySQL',
+    level: 93,
     category: 'Databases & Cloud',
     experienceYears: '3+ yrs',
     iconName: 'Database',
-    featuredProject: 'DevNexus Cloud',
-    description: 'Aggregation pipelines, indexing, schema design with Mongoose, Atlas.',
-  },
-  {
-    name: 'MySQL / PostgreSQL',
-    level: 88,
-    category: 'Databases & Cloud',
-    experienceYears: '3+ yrs',
-    iconName: 'HardDrive',
     featuredProject: 'EchoMarket',
-    description: 'Relational data modeling, ACID transactions, Prisma ORM, Supabase.',
+    description: 'Relational data modeling, schema optimization, transaction isolation, profiling.',
   },
   {
     name: 'Docker',
@@ -309,14 +282,6 @@ export const skillsData: Skill[] = [
     experienceYears: '2+ yrs',
     iconName: 'Container',
     description: 'Containerization, Dockerfile multi-stage builds, Docker Compose.',
-  },
-  {
-    name: 'Vercel / Cloudflare',
-    level: 92,
-    category: 'Databases & Cloud',
-    experienceYears: '2+ yrs',
-    iconName: 'Cloud',
-    description: 'Edge functions, continuous deployment, DNS config, caching layers.',
   },
 
   // DevOps & Tools
@@ -329,20 +294,20 @@ export const skillsData: Skill[] = [
     description: 'Branching workflows, PR reviews, merge conflict resolution, Actions CI/CD.',
   },
   {
-    name: 'Linux / Bash',
-    level: 88,
+    name: 'IntelliJ IDEA',
+    level: 92,
     category: 'DevOps & Tools',
     experienceYears: '3+ yrs',
     iconName: 'TerminalSquare',
-    description: 'Shell scripting, file permissions, server configuration, package management.',
+    description: 'Advanced debugging, profiler tools, project management for Spring architectures.',
   },
   {
-    name: 'VS Code & Android Studio',
-    level: 94,
+    name: 'Postman',
+    level: 91,
     category: 'DevOps & Tools',
-    experienceYears: '4+ yrs',
-    iconName: 'Smartphone',
-    description: 'Advanced debugging, extensions, mobile SDK tooling, profiler inspection.',
+    experienceYears: '3+ yrs',
+    iconName: 'Share2',
+    description: 'API testing, collection runner, environment variables, mock servers.',
   },
 
   // Core Engineering
@@ -362,14 +327,6 @@ export const skillsData: Skill[] = [
     iconName: 'Boxes',
     description: 'Scalability, Load Balancing, Caching, CAP Theorem, Microservices vs Monolith.',
   },
-  {
-    name: 'Problem Solving & Critical Thinking',
-    level: 95,
-    category: 'Core Engineering',
-    experienceYears: '4+ yrs',
-    iconName: 'Lightbulb',
-    description: 'Analytical debugging, root cause analysis, performance profiling.',
-  },
 ];
 
 export const projectsData: Project[] = [
@@ -382,7 +339,7 @@ export const projectsData: Project[] = [
     category: 'AI / ML',
     featured: true,
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop',
-    technologies: ['Next.js 14', 'TypeScript', 'LangChain', 'Python FastAPI', 'OpenAI API', 'Tailwind CSS', 'Pinecone'],
+    technologies: ['Next.js 14', 'TypeScript', 'LangChain', 'Python FastAPI', 'OpenAI API', 'Tailwind CSS', 'MySQL'],
     githubUrl: 'https://github.com/aanandwayare/neuroflow-ai',
     liveUrl: 'https://neuroflow-ai-demo.vercel.app',
     stats: [
@@ -396,7 +353,7 @@ export const projectsData: Project[] = [
       architecture: [
         'Next.js 14 App Router client for reactive graph-based agent workflow builder.',
         'FastAPI asynchronous microservice handling LLM chains and LangChain tool dispatching.',
-        'Vector memory subsystem with Pinecone for dynamic semantic retrieval (RAG).',
+        'Vector memory subsystem with MySQL for dynamic semantic retrieval (RAG).',
         'Server-Sent Events (SSE) for token-by-token streaming and real-time execution graphs.',
       ],
       challenges: [
@@ -422,13 +379,13 @@ export const projectsData: Project[] = [
   {
     id: 'devnexus-cloud',
     title: 'DevNexus Cloud',
-    tagline: 'Collaborative Real-Time Developer Workspace & Cloud Code Canvas',
+    tagline: 'Collaborative Real-Time Developer Workspace & Java Backend Canvas',
     description:
       'A full-stack modern developer platform enabling multi-user real-time code collaboration, live compiler sandboxes, instant video/chat huddles, and automated GitHub repository synchronization.',
     category: 'Full Stack',
     featured: true,
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Node.js', 'WebSockets', 'PostgreSQL', 'Docker', 'Prisma'],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Java', 'Spring Boot', 'Hibernate', 'WebSockets', 'MySQL'],
     githubUrl: 'https://github.com/aanandwayare/devnexus-cloud',
     liveUrl: 'https://devnexus-cloud.vercel.app',
     stats: [
@@ -441,9 +398,9 @@ export const projectsData: Project[] = [
         'DevNexus was designed to solve friction in remote pair programming and technical interviews by combining low-latency shared editors with sandboxed code execution and interactive debugging.',
       architecture: [
         'Next.js 14 App Router frontend with Monaco Editor integration.',
-        'Node.js WebSocket gateway with Operational Transformation (OT) / CRDT for conflict-free multi-cursor syncing.',
+        'Spring Boot WebSocket gateway with Operational Transformation (OT) / CRDT for conflict-free multi-cursor syncing.',
         'Docker container pool for isolated, secure code execution across 12 programming languages.',
-        'PostgreSQL with Prisma ORM for resilient workspace persistence.',
+        'MySQL with Hibernate for resilient workspace persistence.',
       ],
       challenges: [
         'Handling race conditions and cursor position drift across rapid simultaneous keystrokes.',
@@ -460,8 +417,8 @@ export const projectsData: Project[] = [
         'Git branch management & direct commit push to GitHub repositories',
       ],
       futureRoadmap: [
-        'AI pair programmer assistant directly embedded into the Monaco editor',
-        'Custom template marketplace for React, Next.js, and Python microservices',
+        'AI pair programmer assistant directly embedded into the editor',
+        'Custom template marketplace for Spring Boot and Python microservices',
       ],
     },
   },
@@ -474,7 +431,7 @@ export const projectsData: Project[] = [
     category: 'AI / ML',
     featured: true,
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop',
-    technologies: ['Python', 'PyTorch', 'OpenCV', 'Scikit-Learn', 'Flask', 'React', 'Tailwind CSS'],
+    technologies: ['Python', 'OpenCV', 'Scikit-Learn', 'Flask', 'React', 'Tailwind CSS'],
     githubUrl: 'https://github.com/aanandwayare/visionpulse-ml',
     liveUrl: 'https://visionpulse-ml.vercel.app',
     stats: [
@@ -549,13 +506,13 @@ export const projectsData: Project[] = [
   {
     id: 'echomarket',
     title: 'EchoMarket Intelligent Commerce',
-    tagline: 'High-Performance E-Commerce Platform with AI Recommendation Engine',
+    tagline: 'High-Performance E-Commerce Platform with Java Spring Boot Backend',
     description:
       'A full-stack, scalable shopping platform featuring personalized AI product recommendations, real-time inventory management, Stripe payment processing, and an administrative analytics dashboard.',
     category: 'Full Stack',
     featured: false,
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
-    technologies: ['Next.js', 'React', 'MongoDB', 'Node.js', 'Stripe API', 'Tailwind CSS', 'Redis'],
+    technologies: ['Next.js', 'React', 'Java', 'Spring Boot', 'Hibernate', 'MySQL', 'Stripe API', 'Tailwind CSS'],
     githubUrl: 'https://github.com/aanandwayare/echomarket',
     liveUrl: 'https://echomarket-demo.vercel.app',
     stats: [
@@ -568,12 +525,12 @@ export const projectsData: Project[] = [
         'Created a modern headless e-commerce store optimized for sub-second page transitions, dynamic AI personalization, and frictionless checkout experiences.',
       architecture: [
         'Next.js Incremental Static Regeneration (ISR) for instant product page delivery.',
-        'Collaborative filtering recommendation engine built in Node.js and cached with Redis.',
+        'Collaborative filtering recommendation engine built in Spring Boot and cached with Redis.',
         'Stripe webhooks handling secure payment confirmation and order lifecycle management.',
-        'MongoDB Atlas backend with optimized multi-field indexes for instant faceted search.',
+        'MySQL backend with optimized indexes for instant faceted search.',
       ],
       challenges: ['Preventing overselling during flash sale spikes and ensuring sub-second search response times.'],
-      solutions: ['Implemented Redis distributed locks on inventory items and leveraged MongoDB compound index queries.'],
+      solutions: ['Implemented distributed locks on inventory items and leveraged SQL indexes.'],
       features: [
         'Faceted product filtering with live URL state sync',
         'AI "Customers Also Loved" recommendation carousel based on cart contents',
@@ -588,14 +545,14 @@ export const projectsData: Project[] = [
 export const timelineData: TimelineItem[] = [
   {
     id: 'timeline-sit',
-    year: '2023 - Present',
+    year: '2025 – Present',
     title: 'Bachelor of Engineering in Computer Engineering',
     subtitle: 'Sinhagad Institute of Technology, Lonavala',
     organization: 'Savitribai Phule Pune University (SPPU)',
     location: 'Lonavala, Maharashtra, India',
     description: [
       'Deep focus on Software Engineering, Data Structures & Algorithms, Artificial Intelligence, Database Management Systems, and Cloud Computing.',
-      'Active developer building scalable full-stack web architectures and applied AI systems.',
+      'Active developer building scalable Java Full Stack web architectures and applied AI systems.',
       'Participated in university technical symposiums, hackathons, and open source development initiatives.',
     ],
     badge: 'Current Pursuit',
@@ -604,13 +561,13 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'timeline-diploma',
-    year: '2020 - 2023',
+    year: '2022 – 2025',
     title: 'Diploma in Computer Engineering',
     subtitle: 'Foundational Engineering & Core Computing',
     organization: 'MSBTE (Maharashtra State Board of Technical Education)',
     location: 'Maharashtra, India',
     description: [
-      'Built a rock-solid foundation in Object-Oriented Programming (C++, Java), Web Technologies (HTML, CSS, JavaScript, PHP), Relational Databases (MySQL), and Computer Networks.',
+      'Built a rock-solid foundation in Object-Oriented Programming (Java, C++), Web Technologies, Relational Databases (MySQL), and Computer Networks.',
       'Graduated with First Class with Distinction, providing the strong practical springboard for advanced engineering.',
       'Developed multiple hands-on capstone projects including inventory management systems and desktop applications.',
     ],
@@ -620,70 +577,97 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'timeline-ai-expansion',
-    year: '2024 - 2025',
-    title: 'Advanced AI & Full-Stack Systems Research',
-    subtitle: 'Autonomous Agents, LLMs & Distributed Architecture',
-    organization: 'Independent Engineering & Open Source',
+    year: '2025',
+    title: 'Java Full Stack & AI Engineering Specialization',
+    subtitle: 'Advanced projects, internships, and continuous learning',
+    organization: 'Independent Engineering & Internships',
     location: 'Pune, India',
     description: [
+      'Started specialization in Artificial Intelligence and Java Full Stack Development through advanced projects, internships, and continuous learning.',
       'Engineered NeuroFlow AI: an autonomous multi-agent workflow framework leveraging LangChain and OpenAI APIs.',
-      'Developed real-time collaborative developer environments with WebSockets, Docker, and modern Next.js App Router.',
-      'Authored modular open-source repositories and created intuitive developer tools.',
+      'Developed real-time collaborative developer environments with Spring Boot, WebSockets, Docker, and modern Next.js.',
     ],
     badge: 'Key Milestone',
     type: 'milestone',
     icon: 'Sparkles',
   },
+  {
+    id: 'timeline-android-intern',
+    year: 'June 2024 – July 2024',
+    title: 'Android Developer Intern',
+    subtitle: 'Mountreach Solution Pvt. Ltd.',
+    organization: 'Mountreach Solution Pvt. Ltd.',
+    location: 'Pune, India',
+    description: [
+      'Completed a 45-day industrial internship in Android Development (45 Days Internship).',
+      'Built Android applications using core Android concepts and Java.',
+      'Worked on UI development, application architecture, debugging, and optimization.',
+      'Gained practical experience with the software development lifecycle and team collaboration.',
+    ],
+    badge: '45 Days Internship',
+    type: 'experience',
+    icon: 'Smartphone',
+  },
+  {
+    id: 'timeline-ai-intern',
+    year: 'March 2026 – April 2026',
+    title: 'Artificial Intelligence Intern',
+    subtitle: 'CodeNova',
+    organization: 'CodeNova',
+    location: 'Remote',
+    description: [
+      'Successfully completed a one-month internship in Artificial Intelligence (1 Month Internship).',
+      'Worked on AI-based applications and real-world development tasks.',
+      'Contributed to assigned projects involving NLP, OpenAI APIs, and intelligent systems.',
+      'Strengthened practical knowledge of AI development workflows and modern software engineering practices.',
+    ],
+    badge: '1 Month Internship',
+    type: 'experience',
+    icon: 'Bot',
+  },
 ];
 
 export const certificationsData = [
   {
-    title: 'Full Stack Web Development & Modern React',
-    issuer: 'Industry Recognized Certification',
-    year: '2024',
-    credentialId: 'FSWD-98234-AW',
-    skills: ['Next.js', 'React', 'Node.js', 'TypeScript', 'REST APIs'],
+    title: 'Python for Data Structures Training',
+    issuer: 'Complete Java Classes by Kunal Sir',
+    year: '2025',
+    credentialId: 'PY-DS-AW',
+    skills: ['Python', 'Data Structures', 'Algorithms'],
   },
   {
-    title: 'Machine Learning & Deep Learning Specialization',
-    issuer: 'AI Foundations & Neural Networks',
-    year: '2024',
-    credentialId: 'ML-DL-54219-AW',
-    skills: ['Python', 'PyTorch', 'Scikit-Learn', 'NLP', 'Computer Vision'],
-  },
-  {
-    title: 'Data Structures and Algorithms in C++ & Java',
-    issuer: 'Algorithmic Problem Solving Mastery',
-    year: '2023',
-    credentialId: 'DSA-31902-AW',
-    skills: ['DSA', 'Trees & Graphs', 'Dynamic Programming', 'Complexity Analysis'],
+    title: 'Java Full Stack Developer Specialization',
+    issuer: 'Complete Java Classes',
+    year: '2025',
+    credentialId: 'JFS-AW',
+    skills: ['Java', 'Spring Boot', 'Hibernate', 'REST APIs', 'MySQL'],
   },
 ];
 
 export const faqData: FAQItem[] = [
   {
     category: 'Recruiter',
-    question: 'Is Anand available for full-time software engineering or AI roles?',
+    question: 'Is Anand available for full-time Java Full Stack or AI roles?',
     answer:
-      'Yes! Anand is actively open to full-time opportunities, high-impact product engineering roles, and innovative internships where he can apply his Full Stack (Next.js/React/Node.js) and AI/ML (Python/LangChain) expertise.',
+      'Yes! Anand is actively open to full-time opportunities, high-impact product engineering roles, and innovative internships where he can apply his Java Full Stack (Java, Spring Boot, React) and AI/ML (Python, OpenAI, LangChain) expertise.',
   },
   {
     category: 'Recruiter',
-    question: 'What makes Anand stand out from other candidates?',
+    question: 'What makes Anand stand out as a Java Full Stack Developer with AI?',
     answer:
-      'Anand bridges high-craft UI/UX engineering with deep AI/LLM systems integration. Having completed both a rigorous Diploma and Bachelor of Engineering at Sinhagad Institute of Technology, he possesses both deep hands-on implementation speed and solid computer science theoretical fundamentals.',
+      'Anand bridges modern web architecture and Spring Boot backends with Applied AI systems integration. Having completed both a Diploma and pursuing BE Computer Engineering at Sinhagad Institute of Technology, he possesses strong software engineering fundamentals and implementation speed.',
   },
   {
     category: 'Technical',
-    question: 'What is Anand’s primary tech stack for production web applications?',
+    question: 'What is Anand’s primary tech stack for Java enterprise applications?',
     answer:
-      'For the frontend, Anand utilizes Next.js (App Router), React, TypeScript, Tailwind CSS, and Framer Motion. For backend services, he builds with Node.js, Express, Python FastAPI, PostgreSQL, MongoDB, Redis, and integrates LLMs via LangChain and OpenAI APIs.',
+      'He utilizes Java, Spring Boot, Spring MVC, Hibernate, JDBC, Servlets, and JSP on the backend. For the frontend, he builds with React, Next.js, TypeScript, and Tailwind CSS. Databases are handled with MySQL, and AI pipelines are built with Python, OpenAI APIs, and LangChain.',
   },
   {
     category: 'Technical',
     question: 'How does Anand approach system performance and code quality?',
     answer:
-      'Anand enforces strict TypeScript types, modular component architecture, server-side caching (ISR/SSR), lightweight bundle footprints, 60fps animations, accessible semantic HTML, and automated linting/formatting standards.',
+      'Anand enforces clean architecture, Spring dependency injection patterns, database indexing/caching, strict TypeScript types, responsive UI design, and modular component reusability.',
   },
   {
     category: 'General',
@@ -710,55 +694,54 @@ export const resumeData = {
     {
       degree: 'Bachelor of Engineering in Computer Engineering',
       institution: 'Sinhagad Institute of Technology, Lonavala (SPPU)',
-      duration: '2023 - Present',
+      duration: '2025 – Present',
       grade: 'Pursuing Core Degree',
     },
     {
       degree: 'Diploma in Computer Engineering',
-      institution: 'MSBTE (Maharashtra State Board of Technical Education)',
-      duration: '2020 - 2023',
+      institution: 'MSBTE (MSBTE Board)',
+      duration: '2022 – 2025',
       grade: 'First Class with Distinction',
     },
   ],
   skills: [
     {
       category: 'Languages',
-      items: ['TypeScript', 'JavaScript (ES6+)', 'Python', 'C++', 'C', 'Java', 'SQL'],
+      items: ['Java', 'TypeScript', 'JavaScript (ES6+)', 'Python', 'C++', 'SQL'],
     },
     {
       category: 'Frontend',
-      items: ['Next.js (App Router)', 'React.js', 'Tailwind CSS', 'Framer Motion', 'HTML5/CSS3'],
+      items: ['React.js', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS'],
     },
     {
       category: 'Backend & APIs',
-      items: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'JWT Authentication'],
+      items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JDBC', 'Servlets', 'JSP', 'REST APIs'],
     },
     {
       category: 'AI & Machine Learning',
-      items: ['OpenAI APIs', 'LangChain', 'PyTorch', 'Scikit-Learn', 'spaCy / NLP', 'RAG'],
+      items: ['Python', 'OpenAI API', 'LangChain', 'Machine Learning', 'Scikit-Learn', 'spaCy'],
     },
     {
       category: 'Databases & Tools',
-      items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Docker', 'Git & GitHub', 'Postman'],
+      items: ['MySQL', 'Git & GitHub', 'VS Code', 'IntelliJ IDEA', 'Android Studio', 'Postman'],
     },
   ],
   projects: [
     {
       name: 'NeuroFlow AI - Multi-Agent Workflow Engine',
-      tech: ['Next.js 14', 'Python', 'LangChain', 'OpenAI', 'Tailwind CSS'],
+      tech: ['Next.js 14', 'Python', 'LangChain', 'OpenAI', 'Tailwind CSS', 'MySQL'],
       highlights: [
         'Orchestrated autonomous multi-agent reasoning chains with vector search RAG retrieval.',
-        'Reduced query latency by 42% through intelligent stream caching and structured outputs.',
+        'Reduced query latency by 45% through intelligent stream caching and structured outputs.',
       ],
     },
     {
-      name: 'Nexus Cloud Workspace - Real-Time Collaborative Platform',
-      tech: ['React', 'Node.js', 'WebSockets', 'Docker', 'MongoDB'],
+      name: 'DevNexus Cloud Workspace - Java Collaborative Platform',
+      tech: ['Next.js', 'React', 'Java', 'Spring Boot', 'Hibernate', 'WebSockets', 'MySQL'],
       highlights: [
-        'Architected sub-50ms operational transform sync for simultaneous document editing.',
+        'Architected sub-25ms WebSocket-based synchronization for simultaneous document editing.',
         'Engineered isolated Docker sandboxes for on-demand cloud code compilation.',
       ],
     },
   ],
 };
-

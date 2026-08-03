@@ -1,4 +1,4 @@
-import { personalInfo, skillsData, projectsData, timelineData, faqData } from './portfolioData';
+import { personalInfo, skillsData } from './portfolioData';
 
 export interface AIResponse {
   answer: string;
@@ -16,7 +16,7 @@ export const promptSuggestions = [
   'What is his full tech stack?',
   'Summarize Anand\'s education & background',
   'How do I contact or schedule an interview?',
-  'What is his experience with Next.js & React?',
+  'What is his experience with Java & Spring Boot?',
 ];
 
 export function queryAIAssistant(query: string): AIResponse {
@@ -32,7 +32,7 @@ export function queryAIAssistant(query: string): AIResponse {
     q.includes('candidate')
   ) {
     return {
-      answer: `**Why Anand Chandrakant Wayare is an exceptional hire:**\n\n1. **Dual Expertise in Full Stack & AI:** Anand doesn't just build UI; he builds end-to-end intelligent systems, seamlessly integrating LLMs, LangChain, and vector databases with ultra-responsive Next.js & React interfaces.\n2. **Deep Practical & Theoretical Foundation:** Having completed both a Diploma in Computer Engineering (with Distinction) and pursuing a BE in Computer Engineering at Sinhagad Institute of Technology, he brings 5+ years of continuous engineering immersion.\n3. **Craftsmanship & Speed:** Anand prioritizes Apple-level polish, 60fps animations, strict TypeScript safety, and scalable clean architectures.\n4. **Proven Projects:** He has built production-grade systems like *NeuroFlow AI* (multi-agent orchestrator) and *DevNexus Cloud* (real-time collaborative workspace).\n\nHe is actively seeking high-impact roles where he can innovate immediately.`,
+      answer: `**Why Anand Chandrakant Wayare is an exceptional hire:**\n\n1. **Dual Expertise in Java Full Stack & AI:** Anand bridges enterprise Java backends (Spring Boot, Hibernate, MySQL, JDBC, Servlets, JSP) with modern Applied AI pipelines (Python, OpenAI APIs, LangChain, vector representations).\n2. **Deep Practical & Theoretical Foundation:** Having completed both a Diploma in Computer Engineering (with Distinction) and pursuing a BE in Computer Engineering at Sinhagad Institute of Technology, he brings 5+ years of continuous engineering immersion.\n3. **Craftsmanship & Speed:** Anand prioritizes Apple-level polish, 60fps animations, strict TypeScript safety, and scalable clean architectures.\n4. **Proven Projects:** He has built production-grade systems like *NeuroFlow AI* (multi-agent orchestrator) and *DevNexus Cloud* (real-time collaborative workspace with Spring Boot backend).\n\nHe is actively seeking high-impact roles where he can innovate immediately.`,
       suggestedAction: {
         label: 'View Featured Projects',
         actionType: 'scroll',
@@ -50,12 +50,11 @@ export function queryAIAssistant(query: string): AIResponse {
     q.includes('langchain') ||
     q.includes('llm') ||
     q.includes('agent') ||
-    q.includes('pytorch') ||
     q.includes('neuroflow') ||
     q.includes('visionpulse')
   ) {
     return {
-      answer: `**Anand's AI & Machine Learning Expertise:**\n\n- **Autonomous Agent Architectures:** Built **NeuroFlow AI**, an enterprise framework for multi-agent LLM task orchestration with vector RAG (Pinecone) and real-time streaming trace visualization.\n- **Computer Vision & Medical ML:** Built **VisionPulse ML**, fine-tuning ResNet & DenseNet architectures with Grad-CAM visual heatmaps for 96.8% accurate radiological anomaly classification.\n- **Core Tooling:** LangChain, OpenAI APIs, PyTorch, Scikit-Learn, spaCy, FastAPI, Hugging Face embeddings, and prompt engineering.\n\nHe specializes in taking AI from research prototypes into production-grade, low-latency web applications.`,
+      answer: `**Anand's AI & Machine Learning Expertise:**\n\n- **Autonomous Agent Architectures:** Built **NeuroFlow AI**, an enterprise framework for multi-agent LLM task orchestration with vector search and real-time streaming trace visualization.\n- **Computer Vision & Medical ML:** Built **VisionPulse ML**, fine-tuning CNN architectures (DenseNet-121) with Grad-CAM visual heatmaps for 96.8% accurate radiological anomaly classification.\n- **Core Tooling:** LangChain, OpenAI APIs, Python, Scikit-Learn, spaCy, and prompt engineering.\n\nHe specializes in taking AI from research prototypes into production-grade web applications.`,
       suggestedAction: {
         label: 'Inspect NeuroFlow AI Case Study',
         actionType: 'modal',
@@ -74,9 +73,8 @@ export function queryAIAssistant(query: string): AIResponse {
     q.includes('frameworks') ||
     q.includes('tools')
   ) {
-    const topSkills = skillsData.slice(0, 10).map((s) => `${s.name} (${s.experienceYears})`).join(', ');
     return {
-      answer: `**Anand's Core Technical Stack:**\n\n- **Languages:** TypeScript, JavaScript (ES6+), Python, C++, C, Java, SQL\n- **Frontend:** Next.js (App Router), React, Tailwind CSS, Framer Motion, HTML5/CSS3\n- **Backend & APIs:** Node.js, Express, Python FastAPI, Flask, REST APIs, WebSockets\n- **AI / ML:** OpenAI APIs, LangChain, PyTorch, Scikit-Learn, spaCy, Vector DBs\n- **Databases & Cloud:** MongoDB, PostgreSQL, MySQL, Redis, Docker, Linux, Vercel\n- **Core Engineering:** Data Structures & Algorithms (300+ problems solved), System Design fundamentals.\n\nHe has a top proficiency rating across modern TypeScript and React ecosystems.`,
+      answer: `**Anand's Core Technical Stack:**\n\n- **Languages:** Java, TypeScript, JavaScript (ES6+), Python, C++, SQL\n- **Frontend:** React, Next.js, HTML5, CSS3, Tailwind CSS, Framer Motion\n- **Backend & APIs:** Java, Spring Boot, Spring MVC, Hibernate, JDBC, Servlets, JSP, REST APIs\n- **AI / ML:** Python, OpenAI API, LangChain, Machine Learning, Scikit-Learn, spaCy\n- **Databases & Tools:** MySQL, Git, GitHub, VS Code, IntelliJ IDEA, Android Studio, Postman, Docker\n\nHe has a top proficiency rating across Java and TypeScript ecosystems.`,
       suggestedAction: {
         label: 'Explore Interactive Skills Matrix',
         actionType: 'scroll',
@@ -98,7 +96,7 @@ export function queryAIAssistant(query: string): AIResponse {
     q.includes('background')
   ) {
     return {
-      answer: `**Anand's Educational Journey:**\n\n1. **Bachelor of Engineering in Computer Engineering (2023 - Present):**\n   * Sinhagad Institute of Technology, Lonavala (Savitribai Phule Pune University)\n   * Rigorous curriculum in DSA, AI, Distributed Systems, DBMS, and Web Architecture.\n\n2. **Diploma in Computer Engineering (2020 - 2023):**\n   * Maharashtra State Board of Technical Education (MSBTE)\n   * Completed with **First Class with Distinction**, solidifying OOP (C++, Java), Networking, and Web fundamentals.\n\nThis continuous academic rigor gives Anand a rare blend of strong low-level systems knowledge and rapid high-level modern product development agility.`,
+      answer: `**Anand's Educational Journey:**\n\n1. **Bachelor of Engineering in Computer Engineering (2025 – Present):**\n   * Sinhagad Institute of Technology, Lonavala (Savitribai Phule Pune University)\n   * Rigorous curriculum in DSA, AI, Distributed Systems, DBMS, and Web Architecture.\n\n2. **Diploma in Computer Engineering (2022 – 2025):**\n   * MSBTE Board\n   * Completed with **First Class with Distinction**, solidifying OOP (Java, C++), Networking, and Web fundamentals.\n\nThis continuous academic rigor gives Anand a rare blend of strong enterprise Java knowledge and rapid Applied AI engineering agility.`,
       suggestedAction: {
         label: 'View Experience Roadmap',
         actionType: 'scroll',
@@ -139,7 +137,7 @@ export function queryAIAssistant(query: string): AIResponse {
     q.includes('showcase')
   ) {
     return {
-      answer: `**Anand's Flagship Engineering Projects:**\n\n1. **NeuroFlow AI:** Autonomous multi-agent AI orchestrator with LangChain, FastAPI, and real-time streaming graph visualizations.\n2. **DevNexus Cloud:** Real-time collaborative cloud IDE with multi-cursor sync, WebSockets, and Dockerized sandboxes.\n3. **VisionPulse ML:** Medical scan diagnostic suite using CNNs, PyTorch, and Grad-CAM explainability heatmaps.\n4. **Algoverse 3D:** Interactive 3D spatial visualizer for complex graph & tree algorithms in Three.js.\n5. **EchoMarket:** High-performance headless e-commerce store with AI personalization and Stripe checkout.`,
+      answer: `**Anand's Flagship Engineering Projects:**\n\n1. **NeuroFlow AI:** Autonomous multi-agent AI orchestrator with LangChain, FastAPI, and real-time streaming graph visualizations.\n2. **DevNexus Cloud:** Real-time collaborative cloud IDE with multi-cursor sync, WebSockets, and Spring Boot backend.\n3. **VisionPulse ML:** Medical scan diagnostic suite using CNNs, PyTorch, and Grad-CAM explainability heatmaps.\n4. **Algoverse 3D:** Interactive 3D spatial visualizer for complex graph & tree algorithms in Three.js.\n5. **EchoMarket:** High-performance headless e-commerce store with Spring Boot and Stripe checkout.`,
       suggestedAction: {
         label: 'Browse All Projects',
         actionType: 'scroll',
@@ -152,7 +150,7 @@ export function queryAIAssistant(query: string): AIResponse {
   // Next.js & React specific
   if (q.includes('next.js') || q.includes('react') || q.includes('frontend')) {
     return {
-      answer: `**Anand's Frontend & Next.js Specialization:**\n\n- **Next.js 14 App Router:** Deep understanding of React Server Components (RSC), Client Components, Streaming SSR with Suspense, Route Handlers, and Server Actions.\n- **Performance:** Sub-second First Contentful Paint (FCP), dynamic code splitting, image optimization with Next/Image, and SEO structured data.\n- **Modern Styling & Animation:** Tailwind CSS, Framer Motion layout transitions, Lenis smooth scrolling, and custom glassmorphism design tokens.\n- **State & Architecture:** Modular component design, custom hooks, and strict TypeScript interfaces.`,
+      answer: `**Anand's Frontend & Next.js Specialization:**\n\n- **Next.js & React:** Deep understanding of Server Components (RSC), Client Components, Streaming SSR with Suspense, Route Handlers, and Server Actions.\n- **Performance:** Sub-second First Contentful Paint (FCP), dynamic code splitting, image optimization, and SEO structured data.\n- **Modern Styling & Animation:** Tailwind CSS, Framer Motion layout transitions, Lenis smooth scrolling, and custom glassmorphism design tokens.\n- **State & Architecture:** Modular component design, custom hooks, and strict TypeScript interfaces.`,
       suggestedAction: {
         label: 'View Frontend Projects',
         actionType: 'scroll',
@@ -177,7 +175,7 @@ export function queryAIAssistant(query: string): AIResponse {
 
   // Default intelligent fallback
   return {
-    answer: `Anand Chandrakant Wayare is a **Full Stack Developer & AI Engineer** based in Pune, India, currently pursuing his BE in Computer Engineering at Sinhagad Institute of Technology (following a Diploma with Distinction).\n\nHe specializes in **Next.js, React, TypeScript, Python, and Generative AI (LangChain, LLMs)**.\n\nFeel free to ask me anything about his technical projects, skills, education, problem solving, or how to contact him for job opportunities!`,
+    answer: `Anand Chandrakant Wayare is a **Java Full Stack Developer & AI Engineer** based in Pune, India, currently pursuing his BE in Computer Engineering at Sinhagad Institute of Technology (following a Diploma with Distinction).\n\nHe specializes in **Java, Spring Boot, React, Next.js, and Applied Artificial Intelligence (OpenAI, LangChain, Python)**.\n\nFeel free to ask me anything about his technical projects, skills, education, problem solving, or how to contact him for job opportunities!`,
     suggestedAction: {
       label: 'Explore Projects & Skills',
       actionType: 'scroll',
@@ -203,4 +201,3 @@ export function findAiResponse(query: string) {
       : undefined,
   };
 }
-

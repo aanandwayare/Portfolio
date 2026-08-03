@@ -84,8 +84,8 @@ export default function BentoProjectDetailModal({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 lg:p-8 overflow-y-auto">
-        {/* Backdrop Blur */}
+      <div key="modal-root" className="fixed inset-0 z-50 overflow-y-auto">
+        {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -94,14 +94,15 @@ export default function BentoProjectDetailModal({
           className="fixed inset-0 bg-black/85 backdrop-blur-xl z-0"
         />
 
-        {/* Modal Container */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.96, y: 20 }}
-          transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-          className="relative z-10 w-full max-w-5xl max-h-[92vh] bg-[#141618] border border-border/80 rounded-[32px] overflow-hidden shadow-2xl flex flex-col my-auto"
-        >
+        {/* Centering wrapper */}
+        <div className="relative z-10 min-h-full flex items-start sm:items-center justify-center p-3 sm:p-5 lg:p-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.96, y: 20 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+            className="relative w-full max-w-5xl bg-[#141618] border border-border/80 rounded-[28px] sm:rounded-[32px] shadow-2xl flex flex-col my-4"
+          >
           {/* TOP STICKY BAR: Project Name & Back/Close */}
           <div className="sticky top-0 z-30 px-6 py-4 bg-[#141618]/90 backdrop-blur-xl border-b border-border/60 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -548,6 +549,7 @@ export default function BentoProjectDetailModal({
           )}
         </div>
       )}
+      </div>
     </AnimatePresence>
   );
 }
