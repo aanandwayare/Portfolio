@@ -360,7 +360,13 @@ export default function SkillConstellationCanvas({
                     height={radius * 1.3}
                     className="pointer-events-none"
                   >
-                    <div className="w-full h-full flex items-center justify-center">
+                    <div 
+                      className="w-full h-full flex items-center justify-center animate-float"
+                      style={{ 
+                        animationDuration: skill.size === 'large' ? '5s' : skill.size === 'medium' ? '6s' : '7s',
+                        animationDelay: `${(skill.x + skill.y) % 10 / 10}s`
+                      }}
+                    >
                       <SkillTechIcon
                         iconName={skill.iconName}
                         className={`${
